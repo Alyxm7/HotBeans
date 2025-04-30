@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Meet the talented team behind Hot Beans. Our developers, designers, and creatives are passionate about building innovative websites that deliver real results.">
+    <meta name="keywords"
+        content="Hot Beans employees, web developers, design team, Hot Beans staff, development team, meet the team, web professionals">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follower">
+    <title>Hot Beans Courses</title>
+    <link rel="icon" type="image/jpg" href="../Images/tabicon.jpg">
+    <style>
+        nav {
+            background-color: rgb(86, 216, 255);
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            font-family: "MillionDesign", sans-serif;
+            transition: background-color 0.3s ease;
+            font-size: 29px;
+        }
+
+        nav a:hover {
+            background-color: rgb(206, 206, 206);
+            border-radius: 15px;
+        }
+
+        @font-face {
+            font-family: "MillionDesign";
+            src: url("../Fonts/MillionDesign.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "CreatoDisplay";
+            src: url("../Fonts/CreatoDisplay-Medium.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: "CreatoDisplayB";
+            src: url("../Fonts/CreatoDisplay-Bold.otf") format("opentype");
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            height: 60px;
+            border-radius: 10px;
+        }
+
+        .Titlehead {
+            border: 1px solid;
+            margin: auto;
+            border-radius: 10px;
+            max-width: 800px;
+            margin-top: 10px;
+            background-color: rgba(185, 185, 185, 0.986);
+            height: 220px;
+        }
+
+        .Titlehead h1 {
+            text-align: center;
+            font-family: "MillionDesign", sans-serif;
+            font-size: 36px;
+            font-weight: lighter;
+        }
+
+        .Titlehead p {
+            text-align: center;
+            justify-content: center;
+            font-family: "CreatoDisplayB", sans-serif;
+            font-size: 18px;
+            max-width: 1000px;
+        }
+
+        .coursesection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .course {
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 300px;
+            font-family: "CreatoDisplay", sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+        }
+
+        .course p {
+            font-family: "CreatoDisplayB", sans-serif;
+        }
+
+        .apply-button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            margin-top: auto;
+            text-decoration: none;
+            max-width: 55px;
+            color: black;
+        }
+
+        .apply-button:hover {
+            background-color: white;
+            transform: scale(1.05);
+        }
+
+        .course img {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            background-color: rgb(189, 189, 189);
+        }
+
+        .footer h1 {
+            text-align: center;
+            font-family: "MillionDesign", sans-serif;
+            font-weight: lighter;
+            font-size: 50px;
+        }
+
+        .footer p {
+            text-align: center;
+            font-family: "CreatoDisplayB", sans-serif;
+            margin-top: -20px;
+            padding-bottom: 20px;
+        }
+
+
+
+        .iconcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            gap: 10px;
+            margin-bottom: 50px;
+            margin-top: -25px;
+        }
+
+        .footer img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../Images/Logo.png" alt="Hot Beans" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="MeetUs.html">Meet us</a>
+        <a href="Careers.html">Careers</a>
+        <a href="Courses.html">Courses</a>
+        <a href="Apply.html">Apply</a>
+    </nav>
+    <div class="Titlehead">
+        <h1>Available Courses</h1>
+        <p>Looking to get into web devlopment but not sure where to start?
+            We've put together a selectin of trusted, beginner-friendly
+            courses from around the web to help you build your skills.
+            Whether you want to larn HTML, CSS, JavaScript, or more advanced tools,
+            these resouces can guide you at your on pace.
+
+            Explore the links below and start learning with platforms that developers
+            around the world rely on.</p>
+    </div>
+    <div class="coursesection">
+        <div class="course">
+            <h1>HTML</h1>
+            <img src="../Images/w3schools.png">
+            <p>Learn the basics of HTML—the foundation of every website.
+                This beginner-friendly course covers everything from simple
+                tags to creaing full web pages. Pracice as you go with
+                interactive examples and hands-on coding.</p>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="apply-button">Explore</a>
+        </div>
+        <div class="course">
+            <h1>CSS</h1>
+            <img src="../Images/w3schools.png">
+            <p>Discover how to style and design your websites with CSS.
+                This course teaches you how to change colors, layouts, fonts,
+                and more to brig your web pages to life. Incldes interactive
+                lessons and live code editors.</p>
+            <a class="apply-button">Explore</a>
+        </div>
+        <div class="course">
+            <h1>JavaScript</h1>
+            <img src="../Images/w3schools.png">
+            <p>Learn how to make your websites interactive with JavaScript.
+                This course covers everything from basic functions and events
+                to more advaned concepts like loops and DOM maipulation.
+                Practice your skills with real-time examples.</p>
+            <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="apply-button">Explore</a>
+        </div>
+        <div class="course">
+            <h1>Web Design</h1>
+            <img src="../Images/codeacademy.png">
+            <p>This course introduces students to the essential principles
+                and tools of modern web design. Through a combination of
+                theory and hands-on practice, learners will explore the
+                foundational elements of visual design, user experience (UX),
+                user interface (UI), and responsive layout techniques.</p>
+            <a href="https://www.codecademy.com/catalog/subject/web-design" target="_blank"
+                class="apply-button">Explore</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <h1>Hot Beans</h1>
+        <div class="iconcontainer">
+            <img src="../Images/facebookicon.png" alt="facebookicon">
+            <img src="../Images/instagramicon.png" alt="instagramicon">
+            <img src="../Images/Xicon.png" alt="Xicon">
+            <img src="../Images/whatsappicon.png" alt="whatsappicon">
+        </div>
+        <p>2025 Hot Beans. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Hot Beans is a modern web development company creating responsive, innovative, and user-friendly websites. Explore our services, meet the team, and get in touch today.">
+    <meta name="keywords"
+        content="Hot Beans, web development, responsive websites, UI/UX, front-end, back-end, digital agency, custom websites, modern web design">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follower">
+    <title>Hot Beans Home Page</title>
+    <link rel="icon" type="image/jpg" href="../Images/tabicon.jpg">
+    <style>
+        nav {
+            background-color: rgb(86, 216, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            font-family: "MillionDesign", sans-serif;
+            transition: background-color 0.3s ease;
+            font-size: 29px;
+        }
+
+        @media (max-width: 900px) {
+            nav a {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                font-size: 18px;
+            }
+        }
+
+        nav a:hover {
+            background-color: rgb(206, 206, 206);
+            border-radius: 15px;
+        }
+
+        @font-face {
+            font-family: "MillionDesign";
+            src: url("../Fonts/MillionDesign.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "CreatoDisplay";
+            src: url("../Fonts/CreatoDisplay-Medium.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: "CreatoDisplayB";
+            src: url("../Fonts/CreatoDisplay-Bold.otf") format("opentype");
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            height: 60px;
+            border-radius: 10px;
+        }
+
+        .video-banner {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        .video-banner video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            height: 60px;
+            border-radius: 10px;
+        }
+
+        .introtitle h1 {
+            font-family: "MillionDesign", sans-serif;
+            text-align: center;
+            font-size: 36px;
+            font-weight: lighter;
+        }
+
+        .p1introduction {
+            text-align: center;
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            font-size: 18px;
+            line-height: 1.6;
+            font-family: "CreatoDisplayB", sans-serif;
+        }
+
+        .valuestitle {
+            text-align: center;
+            font-family: "CreatoDisplay", sans-serif;
+        }
+
+        .section-divider {
+            width: 30%;
+            margin: 30px auto;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 900px) {
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .value-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 5px;
+        }
+
+        .value-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-family: "MillionDesign", sans-serif;
+            font-weight: 100;
+            margin-top: -40px;
+        }
+
+        .value-item p {
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: "CreatoDisplayB", sans-serif;
+        }
+
+        .companyvalues img {
+            width: 350px;
+            height: 350px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            margin-top: -80px;
+        }
+
+        .CEO {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .ceopicture {
+            flex: 1 1 250px;
+            text-align: center;
+        }
+
+        .ceopicture img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .ceodescription {
+            flex: 2 1 400px;
+            font-family: "CreatoDisplayB", sans-serif;
+        }
+
+        .ceodescription h1 {
+            font-family: "MillionDesign", sans-serif;
+            font-weight: lighter;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .ceodescription p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            background-color: rgb(189, 189, 189);
+        }
+
+        .footer h1 {
+            text-align: center;
+            font-family: "MillionDesign", sans-serif;
+            font-weight: lighter;
+            font-size: 50px;
+        }
+
+        .footer p {
+            text-align: center;
+            font-family: "CreatoDisplayB", sans-serif;
+            margin-top: -20px;
+            padding-bottom: 20px;
+        }
+
+        .iconcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            gap: 10px;
+            margin-bottom: 50px;
+            margin-top: -25px;
+        }
+
+        .footer img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../Images/Logo.png" alt="Hot Beans" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="MeetUs.html">Meet us</a>
+        <a href="Careers.html">Careers</a>
+        <a href="Courses.html">Courses</a>
+        <a href="Apply.html">Apply</a>
+    </nav>
+    <div class="video-banner">
+        <video autoplay muted loop playsinline disablePictureInPicture>
+            <source src="../Videos/VideoBanner.mp4" type="video/mp4">
+            Your browser does not support the videos.
+        </video>
+    </div>
+    <div class="introtitle">
+        <h1>Hot Beans - The Web Development Company</h1>
+    </div>
+    <div class="p1introduction">
+        <p1>At Hot Beans, we specialize in crafting innovative and dynamic
+            web solutions that cater to your unique business needs. With
+            a team of expert developers and creative minds, we bring your
+            ideas to life through stunning, user-friendly websites that
+            are built to perform.</p1>
+    </div>
+    <hr class="section-divider">
+    <div class="valuestitle">
+        <h2>The <b>THREE</b> essential company values which holds us together</h2>
+    </div>
+    <section class="companyvalues">
+        <div class="values-grid">
+            <div class="value-item">
+                <img src="../Images/Innovation.jpg" alt="Innovation">
+                <h3>Innovation First</h3>
+                <p>We create cutting-edge solutions that push boundaries in web development.</p>
+            </div>
+            <div class="value-item">
+                <img src="../Images/UserDesign.jpg" alt="User-Centric Design">
+                <h3>User-Centric Design</h3>
+                <p>Our websites are intuitive, responsive, and built for a seamless user experience.</p>
+            </div>
+            <div class="value-item">
+                <img src="../Images/Transparency.jpg" alt="Integrity and Transparency">
+                <h3>Integrity & Transparency</h3>
+                <p>We build trust through clear communication and honest collaboration.</p>
+            </div>
+        </div>
+    </section>
+    <hr class="section-divider">
+    <div class="CEO">
+        <div class="ceopicture">
+            <img src="../Images/CEO.jpg">
+        </div>
+        <div class="ceodescription">
+            <h1>Carla - Our CEO</h1>
+            <p>As the visionary leader of Hot Beans, Carl brings innovation, strategy, and a passion for digital
+                excellence to the forefront of the web development industry. With a deep understanding of both
+                cutting-edge
+                technologies and client needs, they have transformed Hot Beans into a dynamic company know for building
+                sleek,
+                hgh-performance websites and custom web solutions for businesses of all sizes.<br>
+                Under their leadership, Hot Beans has grown into a trusted partner for startups and enterprises alike,
+                delivering
+                scalable and user-focused digital experiences. Carla foters a culture of collaboration, creativity, and
+                continuous learning, ensuring the team stays ahead in the fast-paced world of web development.<br>
+                Driven by a missin to empower brands online, they lead with a hands-on approach and a commitment to
+                quality, inovation, and long-term client success.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <h1>Hot Beans</h1>
+        <div class="iconcontainer">
+            <img src="../Images/facebookicon.png" alt="facebookicon">
+            <img src="../Images/instagramicon.png" alt="instagramicon">
+            <img src="../Images/Xicon.png" alt="Xicon">
+            <img src="../Images/whatsappicon.png" alt="whatsappicon">
+        </div>
+        <p>2025 Hot Beans. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

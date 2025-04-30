@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans Careers</title>
+    <link rel="icon" type="image/jpg" href="../Images/tabicon.jpg">
+    <style>
+        nav {
+            background-color: rgb(86, 216, 255);
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            font-family: "MillionDesign", sans-serif;
+            transition: background-color 0.3s ease;
+            font-size: 29px;
+        }
+
+        nav a:hover {
+            background-color: rgb(206, 206, 206);
+            border-radius: 15px;
+        }
+
+        @font-face {
+            font-family: "MillionDesign";
+            src: url("../Fonts/MillionDesign.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "CreatoDisplay";
+            src: url("../Fonts/CreatoDisplay-Medium.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: "CreatoDisplayB";
+            src: url("../Fonts/CreatoDisplay-Bold.otf") format("opentype");
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            height: 60px;
+            border-radius: 10px;
+        }
+
+        .jobs h1 {
+            font-size: 36px;
+            text-align: center;
+            font-family: "MillionDesign", sans-serif;
+            font-weight: lighter;
+        }
+
+        .jobs p {
+            text-align: center;
+            font-family: "CreatoDisplayB", sans-serif;
+            max-width: 1200px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .applynow h1 {
+            text-align: center;
+            font-family: "MillionDesign", sans-serif;
+            font-weight: lighter;
+        }
+
+        .job-drawer {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .job1 {
+            border: 4px solid black;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .job1 h1 {
+            font-family: "CreatoDisplayB", sans-serif;
+            padding-left: 10px;
+        }
+
+        .job1content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .job1text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .job1 p {
+            font-family: "CreatoDisplayB", sans-serif;
+            text-align: left;
+            margin-left: 10px;
+            max-width: 600px;
+        }
+
+        .job1req h1 {
+            margin-top: -40px;
+            padding-bottom: -20px;
+            font-size: 24px;
+            font-family: "CreatoDisplayB", sans-serif;
+        }
+
+        .job1 ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-family: "CreatoDisplayB", sans-serif;
+            padding-left: 20px;
+            margin-top: -30px;
+        }
+
+        .job1 img {
+            width: 220px;
+            height: auto;
+            border: solid 3px black;
+            border-radius: 12px;
+            margin: 0;
+            margin-right: 50px;
+            margin-top: -100px;
+        }
+
+        .job2 {
+            border: 4px solid black;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .job2 h1 {
+            font-family: "CreatoDisplayB", sans-serif;
+            padding-left: 10px;
+        }
+
+        .job2content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .job2 p {
+            font-family: "CreatoDisplayB", sans-serif;
+            text-align: left;
+            margin-left: 10px;
+            max-width: 600px;
+        }
+
+        .job2 img {
+            width: 220px;
+            height: auto;
+            border: solid 3px black;
+            border-radius: 12px;
+            margin-top: -120px;
+            margin-left: 50px;
+        }
+
+        .footer {
+            background-color: rgb(189, 189, 189);
+        }
+
+        .footer h1 {
+            text-align: center;
+            font-family: "MillionDesign", sans-serif;
+            font-weight: lighter;
+            font-size: 50px;
+        }
+
+        .footer p {
+            text-align: center;
+            font-family: "CreatoDisplayB", sans-serif;
+            margin-top: -20px;
+            padding-bottom: 20px;
+        }
+
+
+        .titlehead {
+            border: 1px solid;
+            margin: auto;
+            border-radius: 10px;
+            max-width: 800px;
+            margin-top: 10px;
+            background-color: rgba(185, 185, 185, 0.986);
+            padding: 10px;
+            height: 220px;
+        }
+
+        .iconcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            gap: 10px;
+            margin-bottom: 50px;
+            margin-top: -25px;
+        }
+
+        .footer img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../Images/Logo.png" alt="Hot Beans" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="MeetUs.html">Meet us</a>
+        <a href="Careers.html">Careers</a>
+        <a href="Courses.html">Courses</a>
+        <a href="Apply.html">Apply</a>
+    </nav>
+    <div class="titlehead">
+        <div class="jobs">
+            <h1>JOIN THE TEAM!</h1>
+            <p>If you're a web development enthusiast ready to make an impact,
+                you've come to the right place. We are always looking for
+                talented, creative, and driven individuals to join our dynamic
+                team and help us craft the future of the web.
+                Whether you're a seasoned developer or a budding coder, Hot Beans
+                offers an inclusive and innovative environment where your skills
+                will grow alongside some of the brightest minds in the industry.
+                We take pride in fostering a collaborative and supportive culture
+                where everyone has the opportunity to contribute and thrive.</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="applynow">
+        <h1>Apply on the top right!</h1>
+    </div>
+    <div class="job-drawer">
+        <div class="job1">
+            <h1>Front-End Developer</h1>
+            <div class="job1content">
+                <div class="job1text">
+                    <p>We are seeking a skilled and enthusiastic Front-End Developer
+                        who is passionate about creating beautiful, functional, and
+                        responsive web interfaces. As part of our team, you will work
+                        closely with designers, back-end developers, and project managers
+                        to build modern, high-performance websites and web applications
+                        that deliver exceptional user experiences.</p><br>
+                    <div class="job1req">
+                        <h1>Requirements:</h1><br>
+                        <div class="bulletlist">
+                            <ul>
+                                <li>Proficient in HTML, CSS, and JavaScript</li>
+                                <li>Strong understanding of responsive design and mobile-first development</li>
+                                <li>Ability to work collaboratively in a team environment</li>
+                                <li>Strong problem-solving skills and attention to detail</li>
+                            </ul>
+                        </div>
+                        <br><br>
+                        <h1>Qualifications:</h1><br>
+                        <div class="qual">
+                            <ul>
+                                <li>Bachelor's degree in Computer Science or related field</li>
+                                <li>Portfolio of front-end development work</li>
+                                <li>1+ years of professional experience in web development</li>
+                                <li>Familiarity with frameworks such as React or Vue.js is a plus</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="../Images/frontend.jpg" alt="FrontEndImage">
+            </div>
+        </div>
+        <div class="job1" style="margin-top: 20px;">
+            <h1>Back-End Developer</h1>
+            <div class="job1content">
+                <div class="job1text">
+                    <p>We're looking for a talented Back-End Developer to join our team
+                        and play a key role in building the server-side architecture
+                        for the web applications we create. In this role, you will design
+                        and develop the core components, databases, and APIs that power our
+                        client projects. Collaborating with front-end developers, designers,
+                        and project managers, you'll help deliver seamless, high-performance
+                        web solutions that are reliable, secure, and scalable.</p><br>
+                    <div class="job1req">
+                        <h1>Requirements:</h1><br>
+                        <div class="bulletlist">
+                            <ul>
+                                <li>Proficient in server-side languages (e.g., Node.js, Python, PHP)</li>
+                                <li>Experience with database technologies (e.g., MySQL, MongoDB)</li>
+                                <li>Strong understanding of RESTful APIs and web services</li>
+                                <li>Ability to optimize application performance and scalability</li>
+                            </ul>
+                        </div>
+                        <br><br>
+                        <h1>Qualifications:</h1><br>
+                        <div class="bulletlist">
+                            <ul>
+                                <li>Bachelor's degree in Computer Science, Engineering, or related field</li>
+                                <li>2+ years of back-end development experience</li>
+                                <li>Experience working with cloud platforms (e.g., AWS, Azure) is a plus</li>
+                                <li>Strong understanding of software architecture and design patterns</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="../Images/backend.jpg" alt="BackEndImage">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <h1>Hot Beans</h1>
+        <div class="iconcontainer">
+            <img src="../Images/facebookicon.png" alt="facebookicon">
+            <img src="../Images/instagramicon.png" alt="instagramicon">
+            <img src="../Images/Xicon.png" alt="Xicon">
+            <img src="../Images/whatsappicon.png" alt="whatsappicon">
+        </div>
+        <p>2025 Hot Beans. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

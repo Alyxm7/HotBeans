@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Meet the talented team behind Hot Beans. Our developers, designers, and creatives are passionate about building innovative websites that deliver real results.">
+    <meta name="keywords"
+        content="Hot Beans employees, web developers, design team, Hot Beans staff, development team, meet the team, web professionals">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follower">
+    <title>Hot Beans Employee Page</title>
+    <link rel="icon" type="image/jpg" href="../Images/tabicon.jpg">
+    <style>
+        nav {
+            background-color: rgb(86, 216, 255);
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            font-family: "MillionDesign", sans-serif;
+            transition: background-color 0.3s ease;
+            font-size: 29px;
+        }
+
+        nav a:hover {
+            background-color: rgb(206, 206, 206);
+            border-radius: 15px;
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            height: 60px;
+            border-radius: 10px;
+        }
+
+        @font-face {
+            font-family: "MillionDesign";
+            src: url("../Fonts/MillionDesign.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "CreatoDisplay";
+            src: url("../Fonts/CreatoDisplay-Medium.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: "CreatoDisplayB";
+            src: url("../Fonts/CreatoDisplay-Bold.otf") format("opentype");
+        }
+
+        .imagebanner {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            padding-left: 0;
+            margin-top: 0;
+        }
+
+        .imagebanner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center -250px;
+            display: block;
+        }
+
+        .pageintroduction h1 {
+            text-align: center;
+            font-family: "CreatoDisplayB", sans-serif;
+            font-weight: 900;
+            font-size: 36px;
+        }
+
+        .pageintroduction p {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            font-family: "CreatoDisplayB", sans-serif;
+            font-size: 18px;
+        }
+
+        .interact h1 {
+            font-family: "MillionDesign", sans-serif;
+            font-weight: lighter;
+            font-size: 30px;
+            text-align: center;
+
+        }
+
+        .employee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .card {
+            background-color: rgb(201, 201, 201);
+            padding: 20px;
+            border-radius: 12px;
+            transition: transform 0.3s ease, height 0.3s ease;
+            font-family: "CreatoDisplayB", sans-serif;
+            position: relative;
+            overflow: hidden;
+            min-height: 300px;
+            height: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .card:hover {
+            transform: scaleX(1.15) scaleY(1.05);
+            z-index: 10;
+            height: auto;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+        }
+
+
+
+        .card .info {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.3s ease, max-height 0.3s ease;
+            font-family: "CreatoDisplayB", sans-serif;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+
+        .card:hover .info {
+            opacity: 1;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .card h1 {
+            font-family: "MillionDesign", sans-serif;
+            font-weight: lighter;
+        }
+
+        .footer {
+            background-color: rgb(189, 189, 189);
+        }
+
+        .footer h1 {
+            text-align: center;
+            font-family: "MillionDesign", sans-serif;
+            font-weight: lighter;
+            font-size: 50px;
+        }
+
+        .footer p {
+            text-align: center;
+            font-family: "CreatoDisplayB", sans-serif;
+            margin-top: -20px;
+            padding-bottom: 20px;
+        }
+
+
+        .iconcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            gap: 10px;
+            margin-bottom: 50px;
+            margin-top: -25px;
+        }
+
+        .footer img {
+            width: 32px;
+            height: 32px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../Images/Logo.png" alt="Hot Beans" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="MeetUs.html">Meet us</a>
+        <a href="Careers.html">Careers</a>
+        <a href="Courses.html">Courses</a>
+        <a href="Apply.html">Apply</a>
+    </nav>
+    <div class="imagebanner">
+        <img src="../Images/teambanner.jpg" alt="teambanner">
+    </div>
+    <div class="pageintroduction">
+        <h1>Who are we?</h1>
+        <p>The employees at Hot Beans are a dedicated team of web developers,
+            designers, and project managers who are passionate about building
+            modern, user-friendly websites. With a mix of front-end and
+            back-end specialists, each member brings valuable experience
+            and creativity to the table. Whether it's writing clean code,
+            designing intuitive interfaces, or managing projects from start
+            to finish, the team works closely together to deliver high-quality
+            digital solutions for every client.</p>
+    </div>
+    <br>
+    <div class="interact">
+        <h1>Hover over the cards to reveal information!</h1>
+    </div>
+    <div class="employee-grid">
+        <div class="card">
+            <img src="../Images/elena.jpg" alt="ElenaPicture">
+            <h1>Elena</h1>
+            <div class="info">
+                <p>Elena is the Lead Front-End Developer at Hot Beans, with over
+                    years of experience in building responsive and accessible web
+                    interfaces. She excels in HTML, CSS, and JavaScript, and has a
+                    keen eye for design and user experience. Elena is known for
+                    turning complex designs into smooth, user-friendly websites.
+                    She's also a mentor to junior developers, helping them improve
+                    their coding standards and design thinking.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Images/bob.jpg" alt="BobPicture">
+            <h1>Bob</h1>
+            <div class="info">
+                <p>Bob is the Lead Back-End Developer at Hot Beans, with over 10 years
+                    of experience in designing and building scalable, efficient server-side
+                    applications. Specializing in technologies like Node.js, Python, and PHP,
+                    Bob is known for his expertise in creating robust APIs and optimizing databases
+                    for performance and reliability. He plays a critical role in ensuring that all
+                    systems communicate smoothly, with an eye on data security and efficient data management.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Images/james.jpg" alt="JamesPicture">
+            <h1>James</h1>
+            <div class="info">
+                <p>James is an innovative Front-End Developer at Hot Beans, specializing in creating dynamic and
+                    user-friendly interfaces. With several years of experience in HTML, CSS, JavaScript, and React,
+                    James is passionate about turning complex user requirements into intuitive and engaging web
+                    applications.
+                    He is known for his attention to detail and his ability to create responsive designs that work
+                    seamlessly across all devices.
+                    James also plays a key role in collaborating with the design team to ensure that visual aesthetics
+                    align perfectly with user functionality.
+                    Beyond coding, James enjoys mentoring junior developers and sharing best practices in web
+                    development.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Images/luce.jpg" alt="LucePicture">
+            <h1>Luce</h1>
+            <div class="info">
+                <p>Luce is the dedicated Project Manager at Hot Beans, bringing over 8 years
+                    of experience in managing digital projects from concept to delivery. With
+                    a background in both tech and design, Luce ensures that the team stays on
+                    track and that each project meets its goals and deadlines. Her organizational
+                    skills are second to none, and she excels in coordinating cross-functional teams
+                    to achieve client satisfaction. Whether it's managing timelines, budgets, or client
+                    relationships, Luce always finds innovative solutions to overcome challenges and keep
+                    projects running smoothly. Known for her excellent communication and problem-solving
+                    skills, she plays a crucial role in making sure everything from planning to deployment goes as
+                    planned.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Images/mark.jpg" alt="MarkPicture">
+            <h1>Mark</h1>
+            <div class="info">
+                <p>Mark is the creative force behind the user interfaces at Hot Beans.
+                    As a UI/UX Designer, he is responsibe for crfting intuitive,
+                    visually engaging, and user-centered designs that make digital
+                    expriences smooth and enjoyable. With a strong background in
+                    graphic deign and user research, Mark brings both aesthetics and
+                    functionality to the table, ensuring that every website and application
+                    is not only beautiful but also easy to navigate. He works closely with
+                    developers and project manaers to ensure design consistency across all
+                    platforms, always focusing on how users interact with dgital products.
+                    Mark's attention to detail and passion for creating flawless desins make
+                    him a key player in delivering exeptional user experiences.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <h1>Hot Beans</h1>
+        <div class="iconcontainer">
+            <img src="../Images/facebookicon.png" alt="facebookicon">
+            <img src="../Images/instagramicon.png" alt="instagramicon">
+            <img src="../Images/Xicon.png" alt="Xicon">
+            <img src="../Images/whatsappicon.png" alt="whatsappicon">
+        </div>
+        <p>2025 Hot Beans. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
